@@ -1,5 +1,6 @@
 # vue_template模板
-模板目录结构
+## 模板目录结构
+```
 ├── public  #打包所需静态资源
 ├── src
     ├── api  #axios请求接口封装
@@ -41,10 +42,12 @@
  ├── .postcss.config.js #postcss相关配置（移动端适配视窗单位转换）
  ├── .babel.config.js 
  └── vue.config.js 
-关于移动端适配方案
+ ```
+## 关于移动端适配方案
 此模板默认做了移动端的适配，使用方案为vw来达到适配，vw单位目前兼容安卓4.4以上和ios8以上 此处输入图片的描述
 
-使用方法
+## 使用方法
+```
 //你的样式文件直接写px 按照设计图给的尺寸来写 例如设计图中给出盒子的width为100px
 .box{
   width:100px
@@ -53,8 +56,9 @@
 .box{
   width:13.333vw
 }
+```
 vw单位不适用于pc端，所以如果使用该模板开发pc网站的话只需把postcss.config.js下注释掉即可 vw适配方案资料
-
+```
  module.exports = {
    "plugins": {
      // "postcss-import": {},
@@ -81,7 +85,9 @@ vw单位不适用于pc端，所以如果使用该模板开发pc网站的话只�
      // },
    }
  }
-Getting started
+ ```
+## Getting started
+```
      # clone the project
      git clone http://192.168.40.3:8099/shuangln/vue_template.git
      
@@ -93,3 +99,4 @@ Getting started
      
      # develop
      npm run serve
+ ```
