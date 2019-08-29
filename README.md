@@ -1,4 +1,4 @@
-vue_template模板
+# vue_template模板
 模板目录结构
 ├── public  #打包所需静态资源
 ├── src
